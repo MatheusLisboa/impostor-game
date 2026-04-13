@@ -1,55 +1,20 @@
-# 🎮 Impostor Game
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Jogo estilo “quem é o impostor?” para jogar em grupo no celular, tablet ou pc.
+# Run and deploy your AI Studio app
 
----
+This contains everything you need to run your app locally.
 
-## 🚀 Funcionalidades
+View your app in AI Studio: https://ai.studio/apps/d058c994-04cc-4c22-9ecd-ae8888fbd97f
 
-* Definir jogadores e impostores
-* Tema de palavras
-* Dica para o impostor (1 palavra)
-* Modo passar o celular
-* Funciona offline (PWA)
+## Run Locally
 
----
+**Prerequisites:**  Node.js
 
-## 🛠️ Tecnologias
 
-* JavaScript / React
-* Firebase (Firestore)
-
----
-
-## ⚙️ Rodar o projeto
-
-```bash
-npm install
-npm run dev
-```
-
----
-
-## 🔥 Firebase
-
-Configure suas credenciais no projeto:
-
-```javascript
-const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_DOMINIO",
-  projectId: "SEU_PROJECT_ID"
-};
-```
-
-Para subir os temas:
-
-```bash
-node upload.js
-```
-
----
-
-## 📱 Deploy
-
-([adicione aqui o link depois)](https://impostor-game-wheat.vercel.app/)
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
