@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "Theme": {
+      "title": "Theme",
+      "description": "A collection of words for a specific game theme",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the theme"
+        },
+        "words": {
+          "type": "array",
+          "description": "List of at least 50 words"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category of the theme (e.g., divertido, bíblico, adulto)"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "is_custom": {
+          "type": "boolean",
+          "description": "Whether it is a user-created theme"
+        },
+        "created_by": {
+          "type": "string",
+          "description": "UID of the user who created it"
+        }
+      },
+      "required": ["name", "words", "category", "updated_at"]
+    }
+  },
+  "firestore": {
+    "/temas/{themeId}": {
+      "schema": "Theme",
+      "description": "Collection of game themes"
+    }
+  }
+}
